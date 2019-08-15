@@ -11,26 +11,24 @@ if (isset($_SERVER['USE_SSL']) && $_SERVER['USE_SSL'] == '1') {
 }
 //系统环境变量是否指定域名
 if(isset($_SERVER['RUNTIME_DOMAIN'])&&!empty($_SERVER['RUNTIME_DOMAIN'])){
-    define('_site_domain',_site_protocol.$_SERVER['RUNTIME_DOMAIN'].'/');
+    define('_site_domain',_site_protocol.$_SERVER['RUNTIME_DOMAIN'].'/TIWP/');
 }else{
-    define('_site_domain',_site_protocol.$_SERVER['SERVER_NAME'].'/');
+    define('_site_domain',_site_protocol.$_SERVER['SERVER_NAME'].'/TIWP/');
 }
-if($_SERVER['SERVER_NAME']=='teachtest.oschina.mopaas.com') {//演示平台数据库
-    define('_site_file_charset','UTF-8');//Linux上传文件转码成UTF-8
-}else{
+
     define('_site_file_charset','GB2312');//win上传文件转码成GB2312
 
-}
+
 //前台全局参数
-define('_site_css',_site_domain.'css/');
-define('_site_js',_site_domain.'js/');
-define('_site_third_party',_site_domain.'third_party/');
-define('_site_images',_site_domain.'images/');
+define('_site_css','https://127.0.0.1/TIWP/css/');
+define('_site_js','https://127.0.0.1/TIWP/js/');
+define('_site_third_party','https://127.0.0.1/TIWP/third_party/');
+define('_site_images','https://127.0.0.1/TIWP/images/');
 //后台全局参数
-define('_admin_domain',_site_domain.'admin/');
-define('_admin_css',_site_css.'admin/');
-define('_admin_js',_site_js.'admin/');
-define('_admin_images',_site_js.'admin/');
+define('_admin_domain','https://127.0.0.1/TIWP/admin/');
+define('_admin_css','https://127.0.0.1/TIWP/css/admin/');
+define('_admin_js','https://127.0.0.1/TIWP/js/');
+define('_admin_images','https://127.0.0.1/TIWP/images/');
 global $_site_version;
 $_site_version=='1.0.0';
 /***全局变量end***/
@@ -61,7 +59,7 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

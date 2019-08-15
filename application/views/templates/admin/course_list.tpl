@@ -107,6 +107,7 @@
                     type: 'post',
                     url: '<{$smarty.const._admin_domain}><{$controller_name}>/del/' + did,
                     success: function (res) {
+                        console.log(res);
                         var return_arr = eval('(' + res + ')');
                         switch (return_arr.status) {
                             case '1':

@@ -48,7 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 //数据库切换
-$db['default']['hostname'] = getenv('DB_HOST') ?: 'localhost';
+$db['default']['hostname'] = getenv('DB_HOST') ?: '127.0.0.1';
 $db['default']['port'] = getenv('DB_PORT') ?: '3306';
 $db['default']['username'] = getenv('DB_USER') ?: 'root';
 $db['default']['password'] = getenv('DB_PASS') ?: 'root';

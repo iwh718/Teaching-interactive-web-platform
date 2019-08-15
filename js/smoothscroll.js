@@ -206,6 +206,7 @@ function ssc_overflowingAncestor(e) {
 }
 
 function ssc_addEvent(e, t, n) {
+    
     window.addEventListener(e, t, n || false)
 }
 
@@ -299,6 +300,6 @@ var ischrome = /chrome/.test(navigator.userAgent.toLowerCase());
 
 if (ischrome) {
     ssc_addEvent("mousedown", ssc_mousedown);
-    ssc_addEvent("mousewheel", ssc_wheel);
+   
     ssc_addEvent("load", ssc_init)
 }

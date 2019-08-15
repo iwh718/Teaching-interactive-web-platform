@@ -1,3 +1,6 @@
+* {
+    touch-action: pan-y;
+}
 /*全局样式*/
 body {
     background: #e5e5e5;

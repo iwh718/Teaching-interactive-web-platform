@@ -1,3 +1,4 @@
+ * { touch-action: pan-y; } 
 /*巨幕*/
 #main-slider {
     background-image: url(../images/slider-bg.jpg);

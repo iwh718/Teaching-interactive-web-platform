@@ -43,7 +43,7 @@
     </div>
 
 </div>
-<div class="copy-right">教学互动平台 © 2015 Powered By chenyi.</div>
+<div class="copy-right">教学互动平台 © 2019 Powered By ME.</div>
 <script src="<{$smarty.const._site_js}>jquery.min.js"></script>
 <script src="<{$smarty.const._site_js}>bootstrap.min.js"></script>
 <script src="<{$smarty.const._site_js}>icheck.min.js"></script>
